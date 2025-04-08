@@ -1,0 +1,38 @@
+[
+    {
+        "url": "images/mountain.jpg",
+        "alt": "Mountain Landscape"
+    },
+    {
+        "url": "images/sunset.jpg",
+        "alt": "Sunset at the Beach"
+    },
+    {
+        "url": "images/forest.jpg",
+        "alt": "Forest Walk"
+    },
+    {
+        "url": "images/lake.jpg",
+        "alt": "Lake Reflection"
+    },
+    {
+        "url": "images/desert.jpg",
+        "alt": "Desert Horizon"
+    },
+    {
+        "url": "images/rainbow.jpg",
+        "alt": "Rainbow Over Hills"
+    },
+    {
+        "url": "images/volcano.jpg",
+        "alt": "Active Volcano"
+    },
+    {
+        "url": "images/aurora.jpg",
+        "alt": "Northern Lights"
+    },
+    {
+        "url": "images/ocean.jpg",
+        "alt": "Ocean View"
+    }
+]

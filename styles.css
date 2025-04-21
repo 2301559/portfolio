@@ -158,7 +158,7 @@ header nav ul li a:hover {
     border-radius: 20px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
-    opacity: 0; /* Изначально скрыт */
+    opacity: 1; /* Изначально скрыт */
     transform: translateY(50px); /* Изначально немного ниже */
     transition: opacity 1.2s ease-out, transform 1.2s ease-out; /* Плавная анимация для opacity и transform */
 }
@@ -1089,12 +1089,15 @@ footer#page-footer  {
     .unilife-footer {
         font-family: 'Raleway', sans-serif;
         height: 20vh;
-        display: flex;
-        align-items: center;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 0.344); /* Тёмная шторка */
+        background-color: rgba(0, 0, 0, 0.344);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/IMG_2498.JPG');
+        padding: 40px 20px;
+        align-items: center;
         overflow: hidden;
         position: relative;
+        display: flex;
+        justify-content: center;
     }
     
       
@@ -1116,5 +1119,71 @@ footer#page-footer  {
         .unilife-header h1 {
           font-size: 2rem;
         }
+      }
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        max-width: 500px;
+        margin: 30px auto 0 auto;
+        padding: 20px;
+      }
+      
+      .gallery-item {
+        width: 100%;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      
+      .gallery-item:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+     
+      .carousel-container {
+        position: relative;
+        max-width: 500px; /* уменьшили ширину */
+        margin: 40px auto;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      }
+      
+      .carousel-slide {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .carousel-image {
+        min-width: 100%;
+        height: 600px; /* фиксированная высота */
+        object-fit: cover; /* обрезка по размеру блока */
+        border-radius: 15px;
+      }
+      
+      .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 50%;
+      }
+      
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      .prev {
+        left: 10px;
+      }
+      
+      .next {
+        right: 10px;
       }
       
